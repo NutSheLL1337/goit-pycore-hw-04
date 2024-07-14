@@ -1,6 +1,7 @@
 from pathlib import Path
 
 def get_cats_info(path):
+    # Функція читає файл та повертає список словників з інформацією про кожного кота
     path = Path(path)
     try:
         with open(file=path, mode='r', encoding='utf-8') as cats_info:
