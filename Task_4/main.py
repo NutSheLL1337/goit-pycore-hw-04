@@ -34,7 +34,8 @@ def main():
             elif command == "change":
                 print(change_contact(args, contacts))
             elif command == "phone":
-                print(f"{contacts.values()}")
+                for key, value in contacts.items():
+                    print(key, value)
             elif command == "all":
                 print(contacts)
             else:
